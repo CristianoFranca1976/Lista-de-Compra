@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cristiano Franca" />
+    <meta name="robots" content="index, follow" />
+    <meta name="discription" content="Uma lista de compra " />
+    <title>Lista de Compra</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/LetraC.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <img src="assets/Image.png" alt="" />
+      <h1>Lista de Compras</h1>
+      <div id="form">
+        <div class="left_box">
+          <label for="nome">Item</label>
+          <input type="text" required />
+        </div>
+        <div class="dropdownUnit">
+          <label for="nome">Quantidade</label>
+          <div class="field">
+            <input type="text" required placeholder="1" />
+          </div>
+        </div>
+        <div class="dropdowncategory">
+          <label for="nome">Categoria</label>
+          <div class="field2">
+            <form method="get" action="cadastrar-enquete.php">
+              <select name="Selecione" required>
+                <option value="Itens" selected>Selecione</option>
+                <option value="Grão">Grão</option>
+                <option value="Fruta">Fruta</option>
+                <option value="Legumes">Legumes</option>
+                <option value="Bebida">Bebida</option>
+                <option value="Carne">Carne</option>
+                <option value="Higiene">Higiene</option>
+                <option value="Limpeza">Limpeza</option>
+                <option value="Laticínios">Laticínios</option>
+                <option value="Pet Shop">Pet Shop</option>
+                <option value="Outros">Outros</option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <div class="button">
+          <button type="button" title="ADD ITENS">
+            <img src="assets/Icon1.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <div id="list"></div>
+    </div>
+    <script src="javasccript.js"></script>
+  </body>
+</html>
+
+<!--Eu fiz faz um tempo e nao lembro quando mas eu atualizei o Java Script,
+  25/10/23 e 26/10/23 dois dias, fiz o ja va com ajuda do IA, fiz responsivel e
+  algums comandos css tambem.
+-->

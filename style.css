@@ -1,0 +1,235 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #31150d 0%, #1f2da4 50%, #31150d 100%);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+  height: 900px;
+  border-radius: 20px;
+  background: var(--base-gray-600, #0c0c0d);
+  border: 0;
+  box-shadow: 5px 5px 50px 30px #7350acb6;
+}
+img {
+  width: 1440px;
+  height: 185px;
+}
+h1 {
+  width: 720px;
+  height: 24px;
+  color: var(--base-gray-100, #fbf9fe);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.72px;
+  margin: 0;
+}
+#form {
+  width: 750px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  
+  gap: 12px;
+}
+.left_box {
+  display: flex;
+  width: 326px;
+  height: 60px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0;
+}
+.field {
+  display: flex;
+  width: auto;
+  height: 40px;
+}
+.left_box label {
+  color: var(--base-gray-200, #afabb6);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.36px;
+  margin: 0;
+}
+.left_box input {
+  width: 302px;
+  height: 16px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--base-gray-300, #252529);
+  background: var(--base-gray-500, #111112);
+  color: aliceblue;
+}
+.dropdownUnit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8;
+  width: 100px;
+  height: 60px;
+}
+.dropdownUnit label {
+  color: var(--base-gray-200, #afabb6);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.36px;
+  margin: 0;
+}
+.dropdownUnit input {
+  width: 72px;
+  height: 16px;
+  border-radius: 6px 0px 0px 6px;
+  border: 1px solid var(--base-gray-300, #252529);
+  background: var(--base-gray-500, #111112);
+  color: aliceblue;
+  padding: 12px;
+}
+input[type=text], select{
+  border: 1px solid rebeccapurple;
+  outline: 1px solid rebeccapurple;
+  border-radius: 6px;
+}
+input[type=text]:hover, select:hover, option:hover {
+  border: 1px solid #7450ac;
+  outline: 1px solid #7450ac;
+}
+input[type=text]:focus, select:focus {
+  border: 1px solid rgb(104, 31, 177);
+ outline: 1px solid rgb(104, 31, 177);
+ background: #252529;
+}
+.list {
+  position: absolute;
+  width: 720px;
+  height: 468px;
+  margin-left: 360px;
+  margin-top: 244px;
+}
+.dropdowncategory {
+  width: 168px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.dropdowncategory label {
+  width: 59px;
+  height: 12px;
+  color: var(--gray-800, #edeaf0);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.36px;
+}
+.field2 {
+  width: 168px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--base-gray-300, #252529);
+  background: var(--base-gray-400, #17171a);
+}
+select {
+  padding: 12px;
+  width: 168px;
+  color: var(--base-gray-200, #afabb6);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.42px;
+  background-color: transparent;
+  border: none;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: var(--produto-purple, #7450ac);
+  margin-top: 23px;
+}
+.button:hover {
+  background: #441c85;
+}
+.button button {
+  background-color: transparent;
+  border: none;
+}
+.button img {
+  width: 24px;
+  height: 24px; 
+}
+option {
+  color: #7450ac ;
+}
+#list {
+  border: 1px solid rgb(110, 109, 109);
+  width: 720px;
+  height: 468px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+#list p {
+  color: rgb(209, 26, 26);
+  text-transform: uppercase;
+  font-family: cursive;
+  font-size: 15px;
+  overflow: auto;
+}
+@media screen and (max-width: 1439px) {
+  body {
+    margin: 10px 0;
+  }
+  #container {
+    border: 1px solid red;
+    width: auto;
+    height: auto;
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+  #list{
+    margin: 20px 5px;
+    width: 250px;
+  }
+ #form {
+  margin: 20px 0;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+ }
+  img {
+    width: 100%;
+  }
+}
